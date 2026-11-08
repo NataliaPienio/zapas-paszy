@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zapas paszy</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <div class="title">
+        <h1>ZAPAS JEDZENIA DLA KONIKA</h1>
+        <svg class="horse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l-.85 8.507A1.357 1.357 0 0 0 7.5 20h.146a2 2 0 0 0 1.857-1.257l.994-2.486A2 2 0 0 1 12.354 15h1.292a2 2 0 0 1 1.857 1.257l.994 2.486A2 2 0 0 0 18.354 20h.146a1.37 1.37 0 0 0 1.364-1.494L19 9h-8c0-3-3-5-6-5l-3 6l2 2zm15 4v-2a3 3 0 0 0-3-3"/>
+        </svg>
+    </div>
+
+    <p id="alert"></p>
+
+    <h2>Dodaj paszę</h2>
+    <form id="add-form">
+      <label for="name">Nazwa</label>
+      <input id="name" placeholder="np. owies" required>
+
+      <label for="pack-g">Gramy w opakowaniu</label>
+      <input id="pack-g" placeholder="np. 25000" inputmode="numeric" required>
+
+      <label for="packs">Ile opakowań kupiłaś</label>
+      <input id="packs" placeholder="np. 2" inputmode="numeric" required>
+
+      <label for="daily-g">Gramy dziennie</label>
+      <input id="daily-g" placeholder="np. 1500" inputmode="numeric" required>
+
+      <button type="submit">Dodaj paszę</button>
+    </form>
+    <p id="message"></p>
+
+    <h2>Pasze</h2>
+    <ul id="list"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
